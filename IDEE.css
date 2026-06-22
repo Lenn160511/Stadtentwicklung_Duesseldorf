@@ -339,4 +339,15 @@ section {
 .navlink:hover {
     text-decoration: underline;
 }
+.titelseite-link {
+    position: absolute;
+    left: 180px;
+    top: 180px;
+}
+
+.quellen-link {
+    position: absolute;
+    left: 180px;
+    top: 230px;
+}
 
