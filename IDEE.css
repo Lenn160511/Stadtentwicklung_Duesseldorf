@@ -343,6 +343,7 @@ section {
     position: absolute;
     left: 180px;
     top: 180px;
+	z-index: 9999;
 }
 
 .quellen-link {
