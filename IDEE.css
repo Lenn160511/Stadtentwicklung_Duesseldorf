@@ -327,4 +327,16 @@ section {
     background-size: cover;
     background-position: center;
 }
+.navlink {
+    display: inline-block;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.navlink:hover {
+    text-decoration: underline;
+}
 
