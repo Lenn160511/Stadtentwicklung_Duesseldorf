@@ -1,0 +1,330 @@
+html, body {
+    scroll-behavior: auto; /* verhindert automatisches Springen */
+}
+
+body {
+  margin: 0;
+  min-height: 200vh;
+  background-color: #F2F2F4; /* Mondgrau hell */
+
+  background-size: 300% 300%;
+  animation: bgMove 18s ease infinite;
+  position: relative;
+  z-index: 0;
+}
+
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#bgvideo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+
+   
+}
+
+/* Textblock */
+.textblock {
+    max-width: 1100px;
+    width: 90%;
+    margin: 2px auto;
+
+    background: rgba(255, 255, 255, 0.85); /* Weiß transparent */
+    padding: 30px 40px;
+    border-radius: 12px;
+    border-left: 6px solid #D9D9DD; /* Mondgrau mittel */
+    box-shadow: 0 0 25px rgba(168,168,173,0.35); /* Mondgrau dunkel */
+
+    z-index: 2;
+    position: absolute;
+    top: 95px;
+    left: 27%;
+}
+
+/* Überschriften */
+.textblock h1,
+.textblock h2 {
+    text-align: center;
+    z-index: 1;
+	
+}
+
+.textblock h1 {
+    margin-bottom: 30px;
+	color: #4a7f3b;
+	color: #4a7f3b;
+}
+
+.textblock h2 {
+	color: #4a7f3b;
+    margin-bottom: 15px;
+}
+
+/* Absätze */
+.textblock p {
+    font-size: 18px;
+    line-height: 1.6;
+    z-index: 1;
+}
+
+.Concept {
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 300px;
+    opacity: 0.95;
+    z-index: 1;
+}
+
+/* SVG Text */
+svg text {
+    fill: black;
+    stroke: transparent;
+    stroke-width: 2px;
+    transition: stroke 0.25s ease, stroke-opacity 0.25s ease;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+svg text:hover {
+    stroke: red;
+    stroke-opacity: 1;
+}
+
+h1 {
+    color: #EBFFF8;
+}
+
+#rheinturm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: auto;
+}
+
+.hidden {
+    opacity: 0;
+    transform: scale(0.9);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#svgMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Menübutton */
+#menuBtn {
+    transform: scale(3);
+    padding: 14px 26px;
+    border-radius: 14px;
+
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    background-color: #E6E6EA;
+    color: #4a3f2b;
+
+    border: none;
+    cursor: pointer;
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    animation: pulse 2.2s infinite ease-in-out;
+
+    z-index: 9999;
+}
+
+#menuBtn:hover {
+    transform: scale(3.25);
+    box-shadow: 0 0 35px rgba(200, 200, 200, 0.8); /* Mondgrau Glow */
+}
+
+#menuBtn:active {
+    transform: scale(2.8);
+}
+
+@keyframes pulse {
+    0%   { transform: scale(3); }
+    50%  { transform: scale(3.12); }
+    100% { transform: scale(3); }
+}
+
+/* Titel */
+.title-wrapper {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+.main-title {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 150px;
+    font-weight: 800;
+    font-family: "Segoe UI", sans-serif;
+    z-index: 10;
+
+    background: linear-gradient(
+        to bottom,
+        #4A7F3B 0%,
+		#3E6C32 40%,
+		#2F5226 70%,
+		#1E3818 100%
+    );
+
+    -webkit-background-clip: text;
+    color: transparent;
+
+    text-shadow: 0 0 35px rgba(200, 200, 200, 0.5);
+}
+
+
+
+/* Einblenden */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -60%); }
+    to   { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Sektionen */
+section h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    margin: 120px 0;
+}
+
+/* Moderner Textblock */
+.section-block {
+    max-width: 900px;
+    width: 90%;
+    margin: 120px auto;
+    padding: 40px 50px;
+
+    background: rgba(255, 255, 255, 0.75); /* Weiß */
+    backdrop-filter: blur(8px);
+
+    border-radius: 18px;
+    border-left: 6px solid #4a7f3b; /* Mondgrau dunkel */
+    box-shadow: 0 8px 35px rgba(168,168,173,0.25);
+
+    color: #4a7f3b;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.section-block h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+
+    color: #4a7f3b; /* Mondgrau dunkel */
+    letter-spacing: 1px;
+}
+
+.section-block p {
+    font-size: 20px;
+    line-height: 1.75;
+    color: #333;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F2F2F4; /* Mondgrau hell */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #A8A8AD; /* Mondgrau dunkel */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8F8F94; /* etwas dunkler */
+}
+#menuBtn:focus {
+    outline: none;
+}
+.section-img {
+    display: block;
+    width: 100%;
+    max-width: 900px;      /* gleiche Breite wie dein Textblock */
+    margin: 20px auto;     /* zentriert */
+    border-radius: 14px;   /* gleiche Rundung wie deine Boxen */
+    box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+}
+/* Nur für Rückblick */
+.rueckblick.section-block {
+    max-width: 900px;
+    width: 90%;
+    margin: 120px auto;
+    padding: 40px 50px;
+
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(8px);
+
+    border-radius: 18px;
+    border-left: 6px solid #4a7f3b;
+    box-shadow: 0 8px 35px rgba(168,168,173,0.25);
+
+    color: #4a7f3b;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.rueckblick.section-block h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    color: #4a7f3b;
+    letter-spacing: 1px;
+}
+
+.rueckblick.section-block p {
+    font-size: 20px;
+    line-height: 1.75;
+    color: #333;
+}
+#rueckblick {
+    background-image: url('bilder/Düsseldorf_1647.jpg');
+    background-size: cover;
+    background-position: center;
+}
+

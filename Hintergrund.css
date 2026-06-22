@@ -1,0 +1,56 @@
+/* Hintergrund des Titel-Frames */
+body {
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+}
+
+
+.titlebox {
+    padding: 32px 0;
+    background: rgba(230, 230, 235, 0.55); /* warmes Moongrey */
+    backdrop-filter: blur(8px);
+    border-bottom: 3px solid rgba(168, 168, 173, 0.35); /* dunkles Moongrey */
+    box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+    position: fixed;
+    bottom: -5;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+
+.titlebox h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 60px;
+    color: #4a7f3b; /* Naturgrün */
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    text-shadow: 0 0 12px rgba(255,255,255,0.4);
+}
+
+
+.titlebox::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 8px;
+    margin-top: 14px;
+
+    background-image: linear-gradient(
+        90deg,
+        #4a7f3b,
+        #6fa84f,
+        #8fdc6f,
+        #4a7f3b
+    );
+
+    border-radius: 4px;
+    filter: blur(0.4px);
+}
+

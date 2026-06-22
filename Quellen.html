@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Quellen</title>
+	 <link rel="stylesheet" href="../CSS/IDEE.css">
+
+</head>
+<body>
+
+
+
+<button id="menuBtn" tabindex="-1">Menü</button>
+
+
+<div id="svgMenu" class="hidden">
+    <svg
+      id="rheinturm"
+      viewBox="0 0 200 500"
+      style="overflow: visible;"
+      xmlns="http://www.w3.org/2000/svg">
+
+
+<!-- Boden -->
+<rect x="0" y="0" width="220" height="1000" fill="#abd2b6" />
+
+<!-- Boden-Schatten unter dem Turm -->
+<ellipse cx="100" cy="430" rx="45" ry="12" fill="rgba(0,0,0,0.25)" />
+
+
+  <!-- Antenne -->
+  <rect x="95" y="60" width="10" height="60" fill="#dcdcdc"/>
+
+  <!-- Spitze mit Schattierung -->
+  <polygon points="95,60 98,0 102,0 105,60" fill="#f2f2f2"/>
+  <polygon points="98,0 102,0 103,60 97,60" fill="rgba(0,0,0,0.15)"/>
+
+  <!-- Rote Streifen -->
+  <rect x="98" y="10" width="4" height="8" fill="#c40000"/>
+  <rect x="96" y="50" width="8" height="10" fill="#c40000"/>
+
+  <!-- Plattform (oben hell, unten dunkel) -->
+  <polygon points="100,200 150,120 50,120" fill="#0a2a4a"/>
+  
+  <polygon points="100,200 130,152 70,152" fill="#cfcfcf"/>
+  <polygon points="100,200 150,120 50,120" fill="rgba(0,0,0,0.25)"/>
+
+  <!-- Schaft mit leichter vertikaler Schattierung -->
+  <polygon points="80,420 120,420 112,172 88,172" fill="#cfcfcf"/>
+  <polygon points="96,420 120,420 112,172 100,172" fill="rgba(0,0,0,0.15)"/>
+
+  <!-- Spitze:1 -->
+  <rect x="75" y="105" width="50" height="15" fill="#bdbdbd"/>
+  <rect x="75" y="105" width="25" height="15" fill="rgba(0,0,0,0.15)"/>
+
+  <!-- Spitze:2 -->
+  <rect x="60" y="101" width="80" height="4" fill="#bdbdbd"/>
+
+  <!-- Spitze:3 -->
+  <rect x="85" y="87" width="30" height="15" fill="#bdbdbd"/>
+  <rect x="85" y="87" width="15" height="15" fill="rgba(0,0,0,0.15)"/>
+
+  <!-- Spitze:4 -->
+  <rect x="60" y="86" width="80" height="4" fill="#bdbdbd"/>
+
+  <!-- leichte Verbreiterung vor der Plattform -->
+  <rect x="88" y="160" width="24" height="12" fill="#cfcfcf"/>
+  <rect x="100" y="160" width="12" height="12" fill="rgba(0,0,0,0.15)"/>
+
+  <!-- Lichtuhr -->
+  <rect x="97" y="190" width="6" height="200" fill="#1a1a1a"/>
+  <circle cx="100" cy="210" r="3" fill="#37e3ff"/>
+  <circle cx="100" cy="240" r="3" fill="#37e3ff"/>
+  <circle cx="100" cy="270" r="3" fill="#37e3ff"/>
+  <circle cx="100" cy="300" r="3" fill="#37e3ff"/>
+  <circle cx="100" cy="330" r="3" fill="#37e3ff"/>
+  <circle cx="100" cy="360" r="3" fill="#37e3ff"/>
+  <circle cx="100" cy="390" r="3" fill="red"/>
+  <circle cx="100" cy="420" r="3" fill="black"/>
+
+  <!-- Fundament -->
+  <rect x="80" y="420" width="40" height="15" fill="#bdbdbd"/>
+  <rect x="80" y="420" width="20" height="15" fill="rgba(0,0,0,0.15)"/>
+
+<line x1="100" y1="210" x2="130" y2="180" stroke="white" stroke-width="1" />
+
+
+<line x1="160" y1="180" x2="130" y2="180" stroke="white" stroke-width="1" />
+
+
+
+ <a href="Titelseite.html">
+    <text x="180" y="180" text-anchor="middle" font-size="16" fill="black">Titelseite</text>
+  </a>
+ 
+
+
+</svg>
+</div>
+
+<script>
+const menu = document.getElementById("svgMenu");
+const btn = document.getElementById("menuBtn");
+
+// Menü öffnen/schließen
+btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+
+    if (menu.classList.contains("hidden")) {
+        btn.style.display = "block";   // Menü zu → Button sichtbar
+    } else {
+        btn.style.display = "none";    // Menü offen → Button unsichtbar
+    }
+});
+
+// Menü schließen, wenn ein Menüpunkt angeklickt wird
+document.querySelectorAll("#svgMenu a").forEach(link => {
+    link.addEventListener("click", () => {
+        menu.classList.add("hidden");  // Menü schließen
+        btn.style.display = "block";   // Button wieder anzeigen
+    });
+});
+
+
+</script>
+
+
+
+<div class="section-block">
+    <h2>Quellen</h2>
+	<p>Hier kommt dein Text hin…</p>
+
+
+
+<div style="text-align: center;">
+
+
+
+    <h1 class="main-title">Unsere Quellen</h1>
+
+    
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
