@@ -328,19 +328,6 @@ section {
     background-position: center;
 }
 
-.section-block {
-    position: relative;
-    padding-left: 60px; /* Platz für den Zeitstrahl */
-}
-
-.zeitstrahl {
-    position: absolute;
-    left: 20px;
-    top: 0;
-    height: 100%;
-    width: 20px;
-    overflow: visible;
-}
 
 
 
