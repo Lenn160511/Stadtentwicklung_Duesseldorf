@@ -338,6 +338,22 @@ section {
 .timeline-block summary::-webkit-details-marker {
     display: none;
 }
+.nice-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4a7f3b;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.nice-btn:hover {
+    background-color: #3a642f;
+    transform: scale(1.05);
+}
 
 
 
