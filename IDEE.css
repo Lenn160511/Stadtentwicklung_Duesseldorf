@@ -354,6 +354,10 @@ section {
     background-color: #3a642f;
     transform: scale(1.05);
 }
+.nice-btn {
+    position: relative;
+    z-index: 9999;
+}
 
 
 
