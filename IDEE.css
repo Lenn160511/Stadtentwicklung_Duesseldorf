@@ -327,11 +327,6 @@ section {
     background-size: cover;
     background-position: center;
 }
-.timeline-block {
-    margin-bottom: 20px;
-    padding: 10px 0;
-    border-left: 4px solid #4a7f3b;
-}
 
 .timeline-block summary {
     font-size: 28px;
@@ -342,10 +337,6 @@ section {
 
 .timeline-block summary::-webkit-details-marker {
     display: none;
-}
-
-.timeline-block[open] summary {
-    color: #4a7f3b;
 }
 
 
