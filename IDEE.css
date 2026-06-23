@@ -326,7 +326,26 @@ section {
     background-image: url('Düsseldorf_1647.jpg');
     background-size: cover;
     background-position: center;
+.oben iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
 
+.unten {
+    position: fixed;
+    top: 20vh; /* direkt unter dem oberen Bereich */
+    left: 0;
+    width: 100%;
+    height: 80vh; /* entspricht 80% */
+    overflow: auto; /* Inhalt darf scrollen */
+}
+
+.unten iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
 
 
 
