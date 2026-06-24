@@ -397,6 +397,18 @@ section {
     height: auto;
     border-radius: 10px;
 }
+.jaw-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Abstand zwischen den Bildern */
+}
+
+.jaw-pic {
+    width: 140px;   /* deutlich kleiner */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
 
 
 
