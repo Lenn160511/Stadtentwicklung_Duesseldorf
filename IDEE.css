@@ -473,6 +473,10 @@ section {
     display: flex;
     gap: 20px;
 }
+.zukunft-heading {
+    color: #006b7a; /* dunkles Türkis */
+    font-weight: 700;
+}
 
 
 
