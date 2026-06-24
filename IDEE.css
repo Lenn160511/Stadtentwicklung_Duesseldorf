@@ -401,7 +401,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 15px; /* Abstand zwischen den Bildern */
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 .jaw-pic {
