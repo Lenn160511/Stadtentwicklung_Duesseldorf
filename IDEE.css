@@ -368,39 +368,26 @@ section {
     margin: 0 10px;
 }
 
-/* Moderner Textblock */
-.section-block-R {
-    max-width: 900px;
-    margin-left: 0;
-    width: 90%;
-    margin: 120px auto;
-    padding: 40px 50px;
 
-    background: rgba(255, 255, 255, 0.75); /* Weiß */
-    backdrop-filter: blur(8px);
-
-    border-radius: 18px;
-    border-left: 6px solid #A7D3E8;
-    box-shadow: 0 8px 35px rgba(168,168,173,0.25);
-
-    color: #A7D3E8;
-    font-family: "Segoe UI", sans-serif;
+.rwd-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;          /* Abstand zwischen Text und Bild */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.section-block-R h2 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 38px;
-    font-weight: 700;
-    text-align: left;
-
-    color: #A7D3E8;
-    letter-spacing: 1px;
+.rwd-text {
+    flex: 1;            /* Text nimmt den verfügbaren Platz */
 }
 
-.section-block-R p {
-    font-size: 20px;
-    line-height: 1.75;
-    color: #333;
+.rwd-img {
+    flex: 0 0 380px;    /* feste Bildbreite */
+}
+
+.rwd-img img {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.15);
 }
 
