@@ -441,10 +441,10 @@ section {
     backdrop-filter: blur(8px);
 
     border-radius: 18px;
-    border-left: 6px solid #6BBF59; /* Zukunftsfarbe */
+    border-left: 6px solid #7FD6E8; /* Zukunftsfarbe */
     box-shadow: 0 8px 35px rgba(168,168,173,0.25);
 
-    color: #6BBF59;
+    color: #7FD6E8;
     font-family: "Segoe UI", sans-serif;
 }
 
