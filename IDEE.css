@@ -367,6 +367,27 @@ section {
 .button-wrapper .nice-btn {
     margin: 0 10px;
 }
+.rwd-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 80px auto;
+}
+
+.rwd-text {
+    flex: 1;
+}
+
+.rwd-img {
+    flex: 0 0 420px; /* feste Bildbreite */
+}
+
+.rwd-img img {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+}
 
 
 
