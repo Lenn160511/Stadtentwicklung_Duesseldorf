@@ -369,25 +369,7 @@ section {
 }
 
 
-.rwd-wrapper {
-    display: flex;
-    align-items: flex-start;
-    gap: 40px;          /* Abstand zwischen Text und Bild */
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
-.rwd-text {
-    flex: 1;            /* Text nimmt den verfügbaren Platz */
-}
 
-.rwd-img {
-    flex: 0 0 380px;    /* feste Bildbreite */
-}
 
-.rwd-img img {
-    width: 100%;
-    border-radius: 14px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.15);
-}
 
