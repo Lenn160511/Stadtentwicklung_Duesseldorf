@@ -237,6 +237,9 @@ section {
     color: #A7D3E8;
     font-family: "Segoe UI", sans-serif;
 }
+.section-block {
+    flex: 1 !important;
+}
 
 .section-block h2 {
     margin-top: 0;
