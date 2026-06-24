@@ -391,11 +391,11 @@ section {
     border-radius: 14px;
     box-shadow: 0 4px 18px rgba(0,0,0,0.15);
 }
-.jaw-img img {
-    width: 100%;
-    border-radius: 14px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.15);
-    margin-bottom: 20px; /* Abstand zwischen den Bildern */
+
+.janwellem-small {
+    width: 180px;   /* oder 150px, 120px – wie du willst */
+    height: auto;
+    border-radius: 10px;
 }
 
 
