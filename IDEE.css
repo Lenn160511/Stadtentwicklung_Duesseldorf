@@ -412,7 +412,7 @@ section {
 }
 .janwellem-box {
     display: flex;
-    justify-content: center; /* optional */
+    
     margin: 20px 0;
 }
 
