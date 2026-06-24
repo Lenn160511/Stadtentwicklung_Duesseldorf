@@ -388,10 +388,7 @@ section {
     border-radius: 14px;
     box-shadow: 0 4px 18px rgba(0,0,0,0.15);
 }
-.section-block,
-.section-block-R {
-    flex: 1;
-}
+
 
 
 
