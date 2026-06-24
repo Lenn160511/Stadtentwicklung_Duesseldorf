@@ -1,5 +1,6 @@
 html, body {
     scroll-behavior: auto; /* verhindert automatisches Springen */
+    overflow-x: hidden;
 }
 
 body {
