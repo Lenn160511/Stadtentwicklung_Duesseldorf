@@ -28,8 +28,6 @@ body {
     object-fit: cover;
     z-index: -1;
     pointer-events: none;
-
-   
 }
 
 /* Textblock */
@@ -55,17 +53,15 @@ body {
 .textblock h2 {
     text-align: center;
     z-index: 1;
-	
 }
 
 .textblock h1 {
     margin-bottom: 30px;
-	color: #4a7f3b;
-	color: #4a7f3b;
+    color: #A7D3E8;
 }
 
 .textblock h2 {
-	color: #4a7f3b;
+    color: #A7D3E8;
     margin-bottom: 15px;
 }
 
@@ -100,7 +96,7 @@ svg text:hover {
 }
 
 h1 {
-    color: #EBFFF8;
+    color: #EAF8FF;
 }
 
 #rheinturm {
@@ -188,10 +184,10 @@ h1 {
 
     background: linear-gradient(
         to bottom,
-        #4A7F3B 0%,
-		#3E6C32 40%,
-		#2F5226 70%,
-		#1E3818 100%
+        #A7D3E8 0%,
+        #8BBFD7 40%,
+        #6EAAC6 70%,
+        #4F8EAA 100%
     );
 
     -webkit-background-clip: text;
@@ -199,8 +195,6 @@ h1 {
 
     text-shadow: 0 0 35px rgba(200, 200, 200, 0.5);
 }
-
-
 
 /* Einblenden */
 @keyframes fadeIn {
@@ -237,10 +231,10 @@ section {
     backdrop-filter: blur(8px);
 
     border-radius: 18px;
-    border-left: 6px solid #4a7f3b; /* Mondgrau dunkel */
+    border-left: 6px solid #A7D3E8;
     box-shadow: 0 8px 35px rgba(168,168,173,0.25);
 
-    color: #4a7f3b;
+    color: #A7D3E8;
     font-family: "Segoe UI", sans-serif;
 }
 
@@ -251,7 +245,7 @@ section {
     font-weight: 700;
     text-align: center;
 
-    color: #4a7f3b; /* Mondgrau dunkel */
+    color: #A7D3E8;
     letter-spacing: 1px;
 }
 
@@ -278,17 +272,20 @@ section {
 ::-webkit-scrollbar-thumb:hover {
   background: #8F8F94; /* etwas dunkler */
 }
+
 #menuBtn:focus {
     outline: none;
 }
+
 .section-img {
     display: block;
     width: 100%;
-    max-width: 900px;      /* gleiche Breite wie dein Textblock */
-    margin: 20px auto;     /* zentriert */
-    border-radius: 14px;   /* gleiche Rundung wie deine Boxen */
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 14px;
     box-shadow: 0 4px 18px rgba(0,0,0,0.15);
 }
+
 /* Nur für Rückblick */
 .rueckblick.section-block {
     max-width: 900px;
@@ -300,10 +297,10 @@ section {
     backdrop-filter: blur(8px);
 
     border-radius: 18px;
-    border-left: 6px solid #4a7f3b;
+    border-left: 6px solid #A7D3E8;
     box-shadow: 0 8px 35px rgba(168,168,173,0.25);
 
-    color: #4a7f3b;
+    color: #A7D3E8;
     font-family: "Segoe UI", sans-serif;
 }
 
@@ -313,7 +310,7 @@ section {
     font-size: 38px;
     font-weight: 700;
     text-align: center;
-    color: #4a7f3b;
+    color: #A7D3E8;
     letter-spacing: 1px;
 }
 
@@ -322,6 +319,7 @@ section {
     line-height: 1.75;
     color: #333;
 }
+
 #rueckblick {
     background-image: url('Düsseldorf_1647.jpg');
     background-size: cover;
@@ -338,10 +336,11 @@ section {
 .timeline-block summary::-webkit-details-marker {
     display: none;
 }
+
 .nice-btn {
     display: inline-block;
     padding: 12px 24px;
-    background-color: #4a7f3b;
+    background-color: #A7D3E8;
     color: white;
     border-radius: 10px;
     text-decoration: none;
@@ -351,9 +350,10 @@ section {
 }
 
 .nice-btn:hover {
-    background-color: #3a642f;
+    background-color: #7AB4CE;
     transform: scale(1.05);
 }
+
 .nice-btn {
     position: relative;
     z-index: 9999;
@@ -368,13 +368,10 @@ section {
     margin: 0 10px;
 }
 
-.button-wrapper .nice-btn {
-    margin: 0 10px;
-}
 /* Moderner Textblock */
 .section-block-R {
     max-width: 900px;
-	margin-left: 0;
+    margin-left: 0;
     width: 90%;
     margin: 120px auto;
     padding: 40px 50px;
@@ -383,10 +380,10 @@ section {
     backdrop-filter: blur(8px);
 
     border-radius: 18px;
-    border-left: 6px solid #4a7f3b; /* Mondgrau dunkel */
+    border-left: 6px solid #A7D3E8;
     box-shadow: 0 8px 35px rgba(168,168,173,0.25);
 
-    color: #4a7f3b;
+    color: #A7D3E8;
     font-family: "Segoe UI", sans-serif;
 }
 
@@ -397,7 +394,7 @@ section {
     font-weight: 700;
     text-align: left;
 
-    color: #4a7f3b; /* Mondgrau dunkel */
+    color: #A7D3E8;
     letter-spacing: 1px;
 }
 
@@ -406,6 +403,4 @@ section {
     line-height: 1.75;
     color: #333;
 }
-
-
 
