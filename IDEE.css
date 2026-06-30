@@ -385,6 +385,7 @@ section {
 
 .rwd-img {
     flex: 0 0 420px;
+    margin-top: 40px;
 }
 
 .rwd-img img {
