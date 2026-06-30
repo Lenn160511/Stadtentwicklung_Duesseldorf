@@ -403,12 +403,36 @@ section {
     width: 180px;   
     height: auto;
     border-radius: 10px;
+    cursor: pointer;
 }
+/* Galerie */
 .jaw-gallery {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Abstand zwischen den Bildern */
+    gap: 15px;
     margin-top: 160px;
+}
+
+/* Overlay */
+#imgOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.75);
+    display: none;               /* unsichtbar */
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+/* Großes Bild */
+#overlayImg {
+    width: 20vw;                 /* ca. 1/5 der Breite */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(255,255,255,0.4);
 }
 
 .jaw-pic {
