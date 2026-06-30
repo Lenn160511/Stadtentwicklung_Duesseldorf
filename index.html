@@ -300,17 +300,6 @@ document.querySelectorAll("#svgMenu a").forEach(link => {
 	<div id="imgOverlay" onclick="closeImage()">
     <img id="overlayImg">
 </div>
-function openImage(src) {
-    const overlay = document.getElementById("imgOverlay");
-    const bigImg = document.getElementById("overlayImg");
-
-    bigImg.src = src;
-    overlay.style.display = "flex";
-}
-
-function closeImage() {
-    document.getElementById("imgOverlay").style.display = "none";
-}
 
 	
 </div>
@@ -377,6 +366,19 @@ function closeImage() {
 
 
 
+<script>
+function openImage(src) {
+    const overlay = document.getElementById("imgOverlay");
+    const bigImg = document.getElementById("overlayImg");
+
+    bigImg.src = src;
+    overlay.style.display = "flex";
+}
+
+function closeImage() {
+    document.getElementById("imgOverlay").style.display = "none";
+}
+</script>
 
 
 </body>
