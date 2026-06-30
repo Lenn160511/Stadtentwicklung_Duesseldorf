@@ -494,6 +494,7 @@ section {
 }
 .top-bar {
     width: 100%;
+    z-index: 30;
     height: 40px;
     text-align: center;
     position: relative;
