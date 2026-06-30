@@ -297,7 +297,22 @@ document.querySelectorAll("#svgMenu a").forEach(link => {
     <img src="Flughafen.jpg" alt="Bild 5" class="jaw-pic">
 	<img src="Straße.png" alt="Bild 5" class="jaw-pic">
 </div>
+	<div id="imgOverlay" onclick="closeImage()">
+    <img id="overlayImg">
+</div>
+function openImage(src) {
+    const overlay = document.getElementById("imgOverlay");
+    const bigImg = document.getElementById("overlayImg");
 
+    bigImg.src = src;
+    overlay.style.display = "flex";
+}
+
+function closeImage() {
+    document.getElementById("imgOverlay").style.display = "none";
+}
+
+	
 </div>
 
 </section>
