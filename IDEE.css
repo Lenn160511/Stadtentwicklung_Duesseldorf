@@ -478,6 +478,20 @@ section {
     color: #7FD6E8; /* dunkles Türkis */
     font-weight: 700;
 }
+.container {
+  display: flex;
+  align-items: center; /* sorgt für gleiche Höhe */
+  justify-content: space-between; /* verteilt Box und Bild */
+}
+
+.text-box {
+  width: 60%;
+}
+
+.image {
+  width: 35%;
+  height: auto;
+}
 
 
 
